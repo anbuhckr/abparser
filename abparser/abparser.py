@@ -77,7 +77,7 @@ class AbParser(object):
         self.add_index()
         
     def load_file(self):
-        with open(file_name, 'r', encoding='utf-8') as f:
+        with open(self.file_name, 'r', encoding='utf-8') as f:
             self.raw_data = f.readlines()
         
     def add_index(self):

@@ -2,6 +2,6 @@
 
 from __future__ import unicode_literals
 
-from .abparser import BinanceClient
+from .abparser import AbParser
 
 __version__ = '1.0.0'

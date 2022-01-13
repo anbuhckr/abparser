@@ -5,5 +5,8 @@ from abparser import AbParser
 
 if __name__ == '__main__':
     abp = AbParser(sys.argv[1])
-    print('start matching')
-    abp.match(sys.argv[2])
+    if abp.match(sys.argv[2]):
+        print(f"{sys.argv[2]} is blocked!!!")
+    else:
+        print(f"{sys.argv[2]} is clear!!!")
+

@@ -34,6 +34,7 @@ $ python3 setup.py install
 Usage:
 
 ```
+# dowload file from https://easylist.to/easylist/easylist.txt
 $ python3 -m abparser easylist.txt https://ads.google.com
 ```
 
@@ -44,6 +45,7 @@ $ python3 -m abparser easylist.txt https://ads.google.com
 
 from abparser import AbParser
 
+# dowload file from https://easylist.to/easylist/easylist.txt
 rules = Filter('easylist.txt')
 url = "https://ads.google.com"
 if rules.match(url):

@@ -46,7 +46,7 @@ $ python3 -m abparser easylist.txt https://ads.google.com
 from abparser import AbParser
 
 # dowload file from https://easylist.to/easylist/easylist.txt
-rules = Filter('easylist.txt')
+rules = AbParser('easylist.txt')
 url = "https://ads.google.com"
 if rules.match(url):
     print(f"{url} is blocked!!!")
